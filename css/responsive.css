@@ -1,0 +1,110 @@
+
+@media(max-width: 992px) {
+
+
+
+.nav-bar ul{
+    display: none;
+
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.menu-hamburguesa {display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 70px;
+    height: 70px; 
+    cursor: pointer;
+}
+
+.menu-label{display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #4c42bd;
+}
+
+
+input {display: none;
+visibility: hidden;
+}
+
+input:checked ~ ul {
+position: fixed;
+width: 60vw;
+background-color: beige;
+right: 0;
+top: 0;
+height: 100vh;
+border: 3px solid #4c42bd;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+z-index: 1;
+color: #4c42bd;
+cursor: pointer;
+} /*cuando este chequeado el input, quiero q muestre los ul */
+
+/* FIN MENU HAMB - INICIO MEDIA DEL HERO*/
+
+.grand-container{
+display: flex;}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.hero-text{
+    width:90%;
+    height: 95%;
+    min-width: 300px;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+.hero-text{
+    padding: 10px;
+}
+
+.hero-text h1{
+    font-size: var(--h1);
+    padding: 15px 0px;
+}
+
+.hero-text h1:hover{
+    transform: scale(1.2);
+    transition: 2s;
+    color: var(--purple);
+}
+
+    
+.hero-text p{
+    font-size: var(--parrafo);
+    text-align: start;
+    padding: 10px;
+}
+
+.hero-text p:hover{
+    transform: scale(1.1);
+    padding: 50px;
+}
+/*Fin media del HERO*/
+}
