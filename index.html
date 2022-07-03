@@ -19,15 +19,15 @@
                     </label>
                     
                 </div>
-                <input type="checkbox" name="menuHamburguesa" id="menuHamburgesa" >
+                <input class="bar" type="checkbox" name="menuHamburguesa" id="menuHamburgesa" >
 
                 <ul>
                     <a href="#"><li>Home</li></a>
                     <li>Servicios</li>
                     <a href="#proyect-linkeo"><li>Proyectos</li></a>
-                    <li href="#contact-linkeo">Contacto</li>
-                    <li>Iniciar Sesión</li>
-                    <li>Registro</li>
+                    <a href="#contact-linkeo"><li >Contacto</li></a>
+                    <a href="inicio.html"><li>Iniciar Sesión</li></a>
+                    <a href="registro.html"><li>Registro</li></a>
                     
                     
                 </ul>
@@ -70,6 +70,56 @@
         </div>
     </section>
     <!--Fin section img - comienzo section contact-->
+    <section class="section-container-contact">
+        <div class="fantasma" id="contact-linkeo"></div>
+        <div class="section-container-menor"> 
+            <div class="container-robotito">
+                <div class="contactos-imagen">
+                    <img src="/Img/contactus.png" alt="imgContáctanos">
+                </div>
+                
+                <img src="/Img/pexels-alex-knight-2599244.jpg" alt="robot-contacto">
+                
+            </div>
+            <div class="container-textArea">
+                <label for="textArea">Ingrese su mensaje</label>
+                <textarea name="text" id="textArea" cols="30" rows="10"></textarea>
+            </div>
+            <div class="inputs">
+                <label for="name">Nombre y Apellido</label>
+                <input class="input-contact" type="text" id="name" required>
+                <label for="tel">Número de Contacto</label>
+                <input class="input-contact" type="tel" id="tel" required placeholder="XX XXXX-XXXX">
+                <label for="email">E-mail</label>
+                <input class="input-contact" type="email" id="email" required>
+                <button type="submit">Enviar</button>
+
+            </div>
+        </div>
+    </section>
+    <!--Fin section contacto - inicio footer-->
+    <footer>
+        <div class="container-footer">
+            <div class="copy-footer">
+                <p>&#169; Copyrigth 2022</p>
+                <p>Desarrollo de Future Design</p>
+            </div>
+            <div class="redes-footer">
+                <h3>Nuestras Redes</h3>
+                <div class="redes-footer-icons">
+                    <div class="ig"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="fb"><a href=""><i class="fa-brands fa-facebook-square"></i></a></div>
+                    <div class="tw"><a href=""><i class="fa-brands fa-twitter-square"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+           
+
+
+
 
 
 
@@ -84,5 +134,3 @@
 
 
     
-</body>
-</html>

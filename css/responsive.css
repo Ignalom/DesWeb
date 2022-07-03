@@ -36,7 +36,7 @@
 }
 
 
-input {display: none;
+.bar {display: none;
 visibility: hidden;
 }
 
@@ -107,4 +107,38 @@ display: flex;}
     padding: 50px;
 }
 /*Fin media del HERO*/
+
+
+/* Media de la section contact*/ 
+
+.section-container-contact{
+    display: flex;
+    flex-direction: column;
+    min-height: 1400px;
+    width: 100vw;
+   align-items: center;
+  
+}
+
+.section-container-menor{
+    display: flex;
+    flex-direction: column; 
+    gap: 100px;
+}
+
+.container-robotito{display: none;}
+
+textarea{max-width: 700px;
+min-width: 300px;}
+
+.inputs{
+    max-width: 500px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+    
+
 }

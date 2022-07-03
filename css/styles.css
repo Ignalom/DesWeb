@@ -18,22 +18,6 @@ font-family: 'Inter', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
 
-/* DEGRADE Azul claro a Oscuro
-
-background: #141E30; 
-background: -webkit-linear-gradient(to top, #243B55, #141E30);  
-background: linear-gradient(to top, #243B55, #141E30);
-
-*/
-
-/* Degrade purple
-background: #c31432; 
-background: -webkit-linear-gradient(to right, #240b36, #c31432);
-background: linear-gradient(to right, #240b36, #c31432);
-
-
-*/
-
 :root{
     --blue:#033772;
     --black:#000000;
@@ -87,7 +71,8 @@ header{width: 100vw;
 }
 
 .container-logo img{
-    width: 200px;
+    min-width: 120px;
+    max-width: 250;
     border-radius: 100%;
     position: relative;
     animation: logo 15s infinite alternate;
@@ -106,11 +91,11 @@ header{width: 100vw;
     }
 }
 
-input {display: none;}
+.bar {display: none;}
 
 /* Media 769 a 1200 - navegador fix*/
 
-@media (min-width:769px) and (max-width:1200px){
+@media (min-width:993px) and (max-width:1400px){
 
     .container-nav ul{
         display: flex;
@@ -224,7 +209,7 @@ gap: 50px;
     border-radius: 30px;
 }
 
-@media (min-width:769px ) and (max-width: 1500px){
+@media (min-width:993px ) and (max-width: 1500px){
 
     .hero-text{
         width:60%;
@@ -268,12 +253,13 @@ gap: 50px;
 /* FIN HERO - Section proyects/imagenes*/
 
 section{
-    padding: 10px;
+    padding: 20px;
     width: 100vw;
     background: #0f0c29; 
     background: -webkit-linear-gradient(to top, #24243e, #302b63, #0f0c29);
     background: linear-gradient(to top, #24243e, #302b63, #0f0c29);
     display: flex;
+
 }
 
     
@@ -321,10 +307,243 @@ section{
     cursor: none;
 }
 
+/*Fin section img - inicio section contact */
+
+
+.section-container-contact{
+    max-height: 1500px;
+    min-height: 600px;
+    width: 100vw;
+    background-color:#141E30; 
+    background: -webkit-linear-gradient(to top, #243B55, #141E30);  
+    background: linear-gradient(to top, #243B55, #141E30);
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    border-top: solid 3px var(--white);
+    border-bottom: solid 3px var(--white);
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+
+}
+
+.section-container-menor{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.container-robotito{
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container-robotito img{
+    height: 300px;
+    max-width: 400px;
+    min-width: 250px;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+.contactos-imagen img {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    left:250px;
+    top: 120px;
+    z-index: 1;
+    border-radius: 20%;
+}
+   
 
 
 
+.container-textArea{
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+.container-textArea label {
+    font-size: var(--h1);
+    color: var(--white);
+}
+
+textarea{
+    max-width: 1200px;
+    max-height: 500px;
+    color: var(--black);
+    font-size: var(--parrafo);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.inputs{
+    max-width: 500px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    
+
+}
+
+
+
+.inputs label{
+    font-size: var(--parrafo);
+    color: var(--white);
+}
+
+.input-contact{
+    min-width: 350px;
+    max-width: 500px;
+    height: 50px;
+    color: var(--black);
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2px;
+    text-align: center;
+
+}
+
+.input-contact::placeholder{
+    text-align: center;
+    font-size: large;
+    color: gray;
+}
       
- 
+button{
+    width: 150px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: var(--parrafo);
+    font-weight: 800;
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+    border: 5px solid var(--purple);
+} 
+
+button:hover{
+    font-size: var(--parrafo);
+    font-weight: 800;
+    background-color: var(--black);
+    color: var(--purple);
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+@media (min-width:993px ) and (max-width: 1500px){
+/* responsive medidas - section contact*/
+
+/* Media de la section contact*/ 
+
+.section-container-contact{
+    display: flex;
+    flex-direction: column;
+    min-height: 2000px;
+    width: 100vw;
+   align-items: center;
+  
+}
+
+.section-container-menor{
+    display: flex;
+    flex-direction: column; 
+    gap: 200px;
+}
+
+textarea{max-width: 1200px;
+min-width: 700px;}
+
+.inputs{
+    max-width: 500px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+}
+/* FIN SECTION - INICIO FOOTER */
+
+footer{
+    background-color: var(--black);
+    width: 100vw;
+    padding: 5px;
+    height: 180px;
+}
+.container-footer{
+    background-color: var(--black);
+    width: 95%;
+    padding: 5px;
+    height: 95%;
+    justify-content: space-around;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.copy-footer{
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.copy-footer p{
+    font-size: var(--parrafo);
+}
+
+.redes-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+}
+
+.redes-footer h3{
+    font-size: var(--h);
+}
+
+.redes-footer-icons{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.ig a i{color:#E1306C;
+    font-size: 50px; 
+
+}
+
+.fb a i{
+   color:#4267B2;
+   font-size: 50px; 
+}
+
+.tw a i{
+    color: aqua;
+    font-size: 50px; 
+}
+
+.fa-brands i{width: 50px;
+height: 50px;
+}
 
