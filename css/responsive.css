@@ -296,6 +296,20 @@ height: 40px;
     .hero-img{
         display: none;
     }
+    /*  LOGO hasta 555px  */
+    .container-logo{width: 200px;
+        height: 100%;
+        position: relative;
+        top: 20px;
+        right: 10px;
+    }
+    
+    .container-logo img{
+        max-width: 150px;
+        border-radius: 100%;
+        position: relative;
+        animation: logo 15s infinite alternate;
+    }
 
     .grand-container {
         display: flex;

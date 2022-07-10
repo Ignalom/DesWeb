@@ -33,7 +33,7 @@ main{
 
 .container-main-img img{
     width: 60vw;
-    height: calc(100vh - 370px);
+    height: calc(100vh - 390px);
 }
 
 
@@ -74,17 +74,34 @@ main{
 }
 
 .button-inicio-container{
-   width: 120px;
-   height: 120px;
+   width: 100px;
+   height: 70px;
    background-color: inherit;
+   padding-top: 30px;
 }
 
 .button-inicio{
     margin-top: 20px;
-    width: 120px;
+    width: 100px;
     height: 50px;
     color: var(--blue);
     background-color: var(--black);
     border: 2px solid var(--black);
+
+}
+
+@media (max-width:555){
+    .container-main-inputs{
+        width: 50vw;
+    }
+
+    .container-main-img{
+        width: 50vw;
+    }
+    
+    .container-main-img img{
+        width: 50vw;
+        height: calc(100vh - 370px);
+    }
 
 }
